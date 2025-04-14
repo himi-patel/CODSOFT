@@ -54,16 +54,20 @@ while True:
 
     if choice not in ["1","2","3","4","5","6","7","8"]:
         print("Invalid choice. please select a valid operation.")
-        exit()
-
-
+        continue
 
     if choice=="8":
             print("Thank you for using the calculator!")
             exit()
 
-    num1=int(input("enter first number:"))
-    num2=int(input("enter second number:"))
+    try:
+        num1=int(input("enter first number:"))
+        num2=int(input("enter second number:"))
+    
+    except ValueError:
+        print("Invalid input. please enter a number.")
+        continue
+
 
    
 
