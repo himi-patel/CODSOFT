@@ -1,11 +1,11 @@
 import random
 
 try:
-    length=int(input("enter the length of the password=").strip())
+    length=int(input("enter the length of the password="))
 
 except ValueError:
     print("Invalid input. please enter a number.")
-    exit()
+    
 
 password_string="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 password_digits="0123456789"
